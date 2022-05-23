@@ -1,3 +1,5 @@
+import char1
+
 import time
 from termcolor import cprint
 
@@ -17,6 +19,7 @@ def inicio():
     cprint('=-=' * 50, 'blue')
 #   time.sleep(1)
 #   time.sleep(1)
+
     apresentação()
 
 
@@ -38,16 +41,19 @@ def apresentação():
 #    time.sleep(1)
     print('\n\t3. Suporte\n\tNullam gravida ut metus sit amet tincidunt.\n')
     cprint('=-=' * 50, 'red')
+    personagens()
+
 
 def personagens():
     personagem = input(
-        '\nDigite o número corresponder ao personagem que deseja:')
+        '\nDigite o número corresponder ao personagem que deseja: ')
     lista_personagem = ['1', '2', '3']
 
     if (personagem in lista_personagem) and (personagem == '1'):
         print('\nhmmm...')
         time.sleep(0.5)
-        print('Você é dos times dos corajosos, então? Vamos lá!')
+        print('Nullam gravida ut metus sit amet tincidunt')
+        char1.jogar1()
 
     else:
         print('Opção não disponível!\n')
